@@ -1,1 +1,4 @@
-# CSS_group0
+### CSS_group0
+
+# Migration attempt
+We have looked at the migration extension of the model, where every cell of the grid moves in a timestep. The issue that we had with the code was that we could not find out the order in which to mutate the cells, since moving all the cells instantly is not possible. We have tried to move them in a specific order (highest /lowest fitness first), randomly and made sure that they do not collide, but that did not seem to work. One other confusion that we had was that the paper mentions that the "marks" of the cells live for one timestep, but they do not mention anywhere in the code if the current timestep will be the lifespan of the marks or the next one. That leads to a question whether all marks get deleted in the next timestep or if we should delete the marks for one more timestep after the current one. I could find any code of the paper as well and since all of these methods failed we ran out of time.
